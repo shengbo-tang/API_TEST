@@ -74,3 +74,4 @@ if __name__ == '__main__':
     excel_path = os.path.join(current_path, '..', 'samples/data/test_data.xlsx')
     excelUtils = ExcelUtile(excel_path, "Sheet1")
     print(excelUtils.get_sheet_data_by_dict())
+    print(excelUtils.get_sheet_data_by_dict())
