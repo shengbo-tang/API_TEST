@@ -11,7 +11,7 @@ import os
 import xlrd
 from common.excel_utils import ExcelUtile
 
-excel_path = os.path.join(os.path.dirname(__file__), 'data/test_data.xlsx')
+excel_path = os.path.join(os.path.dirname(__file__), '../test_data/test_data.xlsx')
 excelUtile = ExcelUtile(excel_path, "Sheet1")
 # print(excelUtile.get_merged_cell_value(8, 0))
 sheet_list = []

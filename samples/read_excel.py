@@ -11,7 +11,7 @@ import os
 import xlrd
 
 
-excel_path = os.path.join(os.path.dirname(__file__), 'data/test_data.xlsx')
+excel_path = os.path.join(os.path.dirname(__file__), '../test_data/test_data.xlsx')
 # print(excel_path)
 
 wb = xlrd.open_workbook(excel_path)   # 创建工作簿对象
