@@ -9,10 +9,11 @@
 
 import os
 from common.excel_utils import ExcelUtile
-
+from common import config
+from common.logcalconfig_utils import local_config
 
 current_path = os.path.dirname(__file__)
-test_data_path = os.path.join(current_path, '..', 'test_data/test_data.xlsx')
+test_data_path = os.path.join(current_path, '..', local_config.CASE_DATA_PATH)
 
 
 class TestdataUtile:
