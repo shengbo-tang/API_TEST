@@ -43,3 +43,4 @@ logger = LogUtils().get_logger()         # 防止日志打印重复
 
 if __name__ == '__main__':
     logger.info('hello')
+    logger.info('你好')
