@@ -39,6 +39,7 @@ class LocalconfigUtils:
         log_level_value = int(self.cfg.get('Log', 'LOG_LEVEL'))
         return log_level_value
 
+
 local_config = LocalconfigUtils()
 
 if __name__ == '__main__':
