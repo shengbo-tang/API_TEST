@@ -24,7 +24,7 @@ class TestdataUtile:
     def __get_testcase_data_dict(self):
         test_case_dict = {}
         for row_data in self.test_data:
-            test_case_dict.setdefault(row_data['用例编号'], []).append(row_data)
+            test_case_dict.setdefault(row_data['测试用例编号'], []).append(row_data)
         return test_case_dict
 
     def def_testcase_data_list(self):
