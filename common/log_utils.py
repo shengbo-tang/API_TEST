@@ -18,8 +18,8 @@ log_output_path = os.path.join(current_path, '..', local_config.LOG_PATH)
 
 
 class LogUtils:
-    def __init__(self, log_path = log_output_path):
-        self.log_name = os.path.join(log_output_path, 'ApiTest_%s.log' % time.strftime('%Y_%m_%d'))
+    def __init__(self, log_path=log_output_path):
+        self.log_name = os.path.join(log_output_path, 'ApiTest_%s_%s.log' % (time.strftime('%Y_%m_%d'), time.strftime('%H-%M-%S')))
         self.logger = logging.getLogger("ApiTestLog")
         self.logger.setLevel(local_config.LOG_LEVEL)
 
@@ -43,5 +43,3 @@ logger = LogUtils().get_logger()         # 防止日志打印重复
 
 if __name__ == '__main__':
     logger.info('hello')
-    logger.info('你好')
-    logger.info('你好')

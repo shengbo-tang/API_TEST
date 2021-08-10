@@ -10,7 +10,7 @@ import os
 from common.config_utils import ConfigUtils
 
 
-config_path = os.path.join(os.path.dirname(__file__), '..', 'conf/config.ini')
+config_path = os.path.join(os.path.dirname(__file__), '..', 'config/config.ini')
 
 configUtils = ConfigUtils(config_path)
 URL = configUtils.read_value('default', 'URL')
